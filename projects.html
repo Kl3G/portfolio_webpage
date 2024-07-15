@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로젝트</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        /* 전체 레이아웃 스타일 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 제목 스타일 */
+        h3 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            color: #0056b3;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-top: 20px;
+            color: #007BFF;
+            text-align: center;
+        }
+
+        /* 내비게이션 스타일 */
+        nav {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center; /* Centering the nav items */
+            flex-wrap: wrap; /* Allow wrapping on small screens */
+        }
+
+        nav a {
+            margin: 0 10px;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #e7f1ff; /* Light background on hover */
+            color: #0056b3;
+        }
+
+        /* 본문 스타일 */
+        main {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Centering all main content */
+        }
+
+        /* 아티클 스타일 */
+        article {
+            margin-bottom: 20px;
+        }
+
+        article h3 {
+            font-size: 24px;
+            color: #0056b3;
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column; /* Stack nav items */
+            }
+            nav a {
+                margin-bottom: 10px; /* Spacing between stacked items */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h3>프로젝트 페이지</h3>
+    <nav>
+        <a href="index.html">홈</a>
+        <a href="introduce.html">소개</a>
+        <a href="contact.html">연락처</a>
+        <a href="register.html">회원가입</a>
+    </nav>
+    <main>
+        <h2>진행한 프로젝트</h2>
+        <article>
+            <h3>프로젝트 1</h3>
+            <p>AI툴을 활용한 음악 제작</p>
+            <audio src="Freefall.mp3" controls autoplay loop></audio>
+        </article>
+        <article>
+            <h3>프로젝트 2</h3>
+            <p>AI툴을 활용한 영상 제작</p>
+            <!-- 절대경로 -->
+            <video src="/video/곰돌.mp4" width="500" controls autoplay loop></video>
+        </article>
+        <article>
+            <h3>프로젝트 3</h3>
+            <p>AI툴을 활용한 영상 제작</p>
+            <!-- 상대경로 -->
+            <video src="../video/곰돌.mp4" width="500" controls autoplay loop></video>
+        </article>
+    </main>
+</body>
+</html>
